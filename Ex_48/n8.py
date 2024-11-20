@@ -37,9 +37,21 @@ def function_1():
     print(f'No hash {dog1}')
     print(aircraft1)
     print('=' * 40)
-    fun_1(aircraft1)
+    fun_1([user1, dog1, aircraft1])
 
-def fun_1(craft):
+def fun_1(craft):   # Is num 1 and 2
     '''Function 1'''
-    x = list(map(lambda x: x, craft))
-    print(x)
+    def sub(obj):
+        '''SubFunction'''
+        x = list()
+        for key, val in vars(obj).items():
+            x.append(f'{key} : {val}')
+        return x
+
+    x = craft
+    l = []
+    if isinstance(x, list):
+        for i in x:
+            print(sub(i))
+    else:
+        print(sub(x))
