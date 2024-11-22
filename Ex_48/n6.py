@@ -20,7 +20,7 @@ def loc_1():
 def loc_2():
     '''Localiztion of string'''
     x = 123213124124210000000000
-    l.setlocale(l.LC_NUMERIC, 'en-us')
+    l.setlocale(l.LC_NUMERIC, 'en-gb')
     fromatted = l.format_string('%e',x)
     print(fromatted)
 

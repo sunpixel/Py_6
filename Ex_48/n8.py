@@ -83,7 +83,7 @@ def fun_3(obj):
         print(f'Random attribute: {x[i]}')
         setattr(obj, x[i], '########')
     print(obj)
-        
+
 def fun_4(*objs):
     '''Create dataclass objects from a list of values'''
     print('=' * 40)
